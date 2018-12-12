@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.meulayout')
 @section('content')
 
 <!DOCTYPE html>
@@ -56,41 +56,9 @@
               </button>
               <ul role="menu" class="dropdown-menu">
                 <li><a href="#">
-                <input type="checkbox"><span class="lbl"> Every day</span>
+                <input type="checkbox" value="1"><span class="lbl"> Every day</span>
                 </a></li>
-                <li class="divider"></li>
-                <li><a href="#">
-                <input type="checkbox">
-                <span class="lbl"> Monday</span>
-              </a></li>
-                <li><a href="#">
-                <input type="checkbox"><span class="lbl">
-                Tuesday</span>
-                </a></li>
-                <li><a href="#">
-                <input type="checkbox"><span class="lbl">
-                Wednesday</span>
-                </a></li>
-                <li><a href="#">
-                <input type="checkbox"><span class="lbl">
-                Thursday</span>
-                </a></li>
-                <li><a href="#">
-                <input type="checkbox"><span class="lbl">
-                Friday</span>
-                </a></li>
-                <li><a href="#">
-                <input type="checkbox"><span class="lbl">
-                Saturday</span>
-                </a></li>
-                <li><a href="#">
-                <input type="checkbox"><span class="lbl">
-                Sunday</span>
-              </a></li>
-                <li class="divider"></li>
-                <li><a href="#">
-                <input type="checkbox"><span class="lbl"> Last Weekday in month</span>
-</a></li>
+
               </ul>
             </div>
             <input type="text" class="form-control">

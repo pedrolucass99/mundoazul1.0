@@ -42,6 +42,7 @@ button:hover, a:hover {
     width: 200px;
     height: 200px;
 }
+
 </style>
 </head>
 <div class="container">
@@ -62,16 +63,15 @@ button:hover, a:hover {
                         <tbody>
                             <tr>
                                 <td>{{ Auth::user()->name }}</td>
-                                <td>{{$responsavel['telefone']}}</td>
                                 <td>{{$responsavel['email']}}</td>
+                                <td>{{$responsavel['telefone']}}</td>
                             </tr>
                         </tbody>
                     </table>
                 <div class="card-body">
                     <a href="#" class="btn btn-danger">Responsável</a>
                      <a href="{{action('ResponsavelController@show', $responsavel['id'].'.criar')}}" class="btn btn-primary">Cadastrar Evento</a>
-                    <a href="#" class="btn btn-primary">Profissionais</a>
-                    <a href="{{action('ResponsavelController@show', 'Profissionais')}}" class="btn btn-primary">Mensagens</a>
+                    <a href="{{action('ResponsavelController@show', 'Profissionais')}}" class="btn btn-primary">Profissionais</a>
                 </div>
 
 </div>
@@ -85,7 +85,7 @@ button:hover, a:hover {
     <thead>
       <tr>
         <th>Nome</th>
-        <th>Publicação</th>
+        <th>Evento</th>
         <th colspan="2">Action</th>
       </tr>
     </thead>
@@ -95,15 +95,11 @@ button:hover, a:hover {
         <tr>
           @if($evento['id_user'] == Auth::id())
             <td>{{$evento['nome_user']}}</td>
-            <td><a href="#">{{$evento['descricao']}}</a></td>
-            <td><a href="{{action('ResponsavelController@show', $evento['id'].'.edit')}}" class="btn btn-warning">Editar dados</a></td>
+            <td><a href="{{action('ResponsavelController@show', '.show')}}" data-toggle="tooltip" data-placement="top" title="Ver descrição do evento">{{$evento['nome_evento']}}</a></td>
+            <td><a href="{{action('ResponsavelController@show', $evento['id'].'.edit')}}" class="p"><i class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="top" title="Editar"></i></a></td>
             <td>
-            <a class="btn btn-danger" href="{{action('ResponsavelController@show', $evento['id'].'.delete')}}">delete</a>
+            <a href="{{action('ResponsavelController@show', $evento['id'].'.delete')}}" class="p"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir"></i></a>
             </td>
-          @else
-            <td>{{$evento['nome_user']}}</td>
-            <td> <a href="{{url('coments', $evento['id'])}}">{{$evento['nome_user']}}</a></td>
-            <td> <a href="#" class="btn btn-primary">Ver</a></td>
           @endif
         </tr>
       @endforeach

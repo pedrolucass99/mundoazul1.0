@@ -61,6 +61,7 @@ class EventoController extends Controller
         $evento = new \App\Evento;
             $evento->id_user = Auth::id();
             $evento->nome_user = Auth::user()->name;
+            $evento->nome_evento = $request->get('nome_evento');
             $evento->local = $request->get('local');
             $evento->hora = $request->get('hora');
             $evento->data = $request->get('data');
@@ -107,6 +108,7 @@ class EventoController extends Controller
 
             $evento->id_user = Auth::id();
             $evento->nome_user = Auth::user()->name;
+            $evento->nome_evento = $request->get('nome_evento');
             $evento->local = $request->get('local');
             $evento->hora = $request->get('hora');
             $evento->data = $request->get('data');

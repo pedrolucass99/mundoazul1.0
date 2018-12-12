@@ -1,11 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+
 <div class="container">
 	<table class="table table-striped">
 		<thead>
@@ -25,13 +20,12 @@
 				<td>{{$evento['nome_user']}}</td>
 				<td>{{$evento['descricao']}}</td>
 				<td>{{$evento['quantidade_participante']}}</td>
-				<td><a href="#" class="btn btn-primary">Ver</a></td>
-				<td><a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-primary">Partiipar</a></td>
+				<td><a href="#" ><i class="fa fa-eye"></i></a></td>
+				<td><a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-primary">Participar</a></td>
 			</tr>	
 		@endforeach
 		</tbody>
 	</table>
 </div>	
-</body>
-</html>
+
 @endsection

@@ -7,6 +7,7 @@ use Instituicao;
 use DB;
 use Responsavel;
 use Mensagem;
+use User;
 
 
 use Illuminate\Http\Request;
@@ -87,7 +88,8 @@ class ProfissionalController extends Controller
             if(Auth::user()->tipo == 2){
                 $object = DB::table('profissionals')->where('id_user', Auth::id())->first();
                 $profissional = \App\Profissional::find($object->id);
-                return view('chat/mensagem', compact('profissional'));
+                $user = \App\User::all()->where('tipo', 2);
+                return view('chat/mensagem', compact('profissional'), compact('user'));
             }
 
             if(Auth::user()->tipo == 3){

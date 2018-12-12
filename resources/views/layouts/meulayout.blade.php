@@ -12,7 +12,7 @@
   <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-           <!-- @auth -->
+           @auth 
                     <li class="nav-item">
                       <a class="nav-link" href="{{url('forum')}}">Fórum</a>
                     </li>
@@ -71,8 +71,9 @@
                     <li>
                       <a href="{{url('/home')}}">{{ Auth::user()->name }}</a>
                     </li>
-                <!-- @else -->
+                 @else
                     <li><a title="team" href="#about">Forum</a></li>
+                    <li><a title="team" href="#skills">Artigos</a></li>
                     <li><a title="services" href="#services">Projetos sociais</a></li>
                     <li><a href="{{url('instituicao')}}">Instituições</a></li>
                      <li class="nav-item">
@@ -83,8 +84,8 @@
                              <a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a>
                         @endif
                     </li>
-              <!--   @endauth -->
-        </ul>
+                @endauth
+         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header>

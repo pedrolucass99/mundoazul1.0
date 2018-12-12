@@ -40,5 +40,5 @@
                    <br>
 
                    <table class="table table-striped">
-   *
+   
 @endsection

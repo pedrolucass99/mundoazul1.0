@@ -1,12 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mundo Azul</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
+   
   </head>
   <body>
     <div class="container">
@@ -27,16 +23,20 @@
     <tbody>
       @foreach($profissional as $profissional)
       <tr>
-        <td>{{Auth::user()->name}}</td>
+        <td>{{$profissional['id_user']}}</td>
         <td>{{$profissional['especializacao']}}</td>
-        <td><a href="{{action('ProfissionalController@show', $profissional['id_user'].'.menssagem')}}" class="btn btn-success">Mensagem</a></td>
+        <td >
+       
+          <a href="{{action('ProfissionalController@show', $profissional['id_user'].'.menssagem')}}" ><i class="fa fa-comments" data-toggle="tooltip" data-placement="top" title="Mensagens"></i>
+       
+        </td>
 
-        <td><a href="{{action('ProfissionalController@show', $profissional['id_user'].'.ver')}}" class="btn btn-success">Ver Mensagem</a></td>
+        <td><a href="{{action('ProfissionalController@show', $profissional['id_user'].'.ver')}}"><i class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Visualizar mensagens"></i></a></td>
       </tr>
       @endforeach
     </tbody>
   </table>
+
   </div>
-  </body>
-</html>
+
 @endsection

@@ -18,6 +18,7 @@ class CreateEventosTable extends Migration
             $table->integer('id_user')->unsigned();
             $table->foreign('id_user')->references('id')->on('users');
             $table->string('nome_user');
+            $table->string('nome_evento');
             $table->string('local');
             $table->string('hora');
             $table->string('data');

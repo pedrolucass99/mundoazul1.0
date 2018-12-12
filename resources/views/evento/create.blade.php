@@ -18,11 +18,20 @@
       <h2>Criar Evento</h2><br/>
       <form method="post" action="{{url('criar', '.create')}}">
         @csrf        
+          
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="Nome">Dê um nome ao evento</label>
+              <input type="text" class="form-control" name="nome_evento" required="">
+            </div>
+          </div>
+
           <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Local">Local</label>
-              <input type="text" class="form-control" name="local">
+              <input type="text" class="form-control" name="local" required="">
             </div>
           </div>
 
@@ -30,7 +39,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Horario">Horário</label>
-              <input type="text" class="form-control" name="hora">
+              <input type="text" class="form-control" name="hora" required="">
             </div>
           </div>
 
@@ -38,7 +47,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Data">Data do Evento</label>
-              <input type="text" class="form-control" name="data">
+              <input type="text" class="form-control" name="data" required="">
             </div>
           </div>
 
