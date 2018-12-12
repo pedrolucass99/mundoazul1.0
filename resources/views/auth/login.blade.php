@@ -87,20 +87,16 @@ function mascara(id, mask){
 }
 </script>
 
-<style type="text/css">
-    #login{
-        margin: auto;
-    }
-</style>
+
 
 <div id="login">
-<div class="container" style="margin-left: 600px; margin-top: 280px;">
-    <div class="row justify-content-center" id="login">
+<div class="container">
+    <div class="form-row align-items-center" id="login">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Entrar') }}</div>
 
-                <div class="card-body">
+                <div class="form-group">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
