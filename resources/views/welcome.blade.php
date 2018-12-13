@@ -15,7 +15,7 @@
               <div class="carousel-content">
                 <h2>Autismo</h2>
                 <p>O autismo é parte deste mundo, não um mundo a parte.” Educando en la vida</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Conheça-nos</a>
+                <a href="#featured-services" class="btn-get-started scrollto btn btn-primary">Conheça-nos</a>
               </div>
             </div>
           </div>

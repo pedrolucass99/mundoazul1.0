@@ -1,6 +1,7 @@
 @extends('layouts.meulayout')
 
 @section('content')
+
 <script>
     function _cpf(cpf) {
     cpf = cpf.replace(/[^\d]+/g, '');
