@@ -1,31 +1,24 @@
 @extends('layouts.app')
+
 @section('content')
-
+   
 <div class="container">
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th>Id</th>
-				<th>Nome</th>
-				<th>Descrição</th>
-				<th>QM</th>
-				<th colspan="2">Ações</th>
-			</tr>
-		</thead>
-
-		<tbody>
-		@foreach($evento as $evento)
-			<tr>
-				<td>{{$evento['id']}}</td>
-				<td>{{$evento['nome_user']}}</td>
-				<td>{{$evento['descricao']}}</td>
-				<td>{{$evento['quantidade_participante']}}</td>
-				<td><a href="#" ><i class="fa fa-eye"></i></a></td>
-				<td><a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-primary">Participar</a></td>
-			</tr>	
-		@endforeach
-		</tbody>
-	</table>
-</div>	
-
+     <header class="section-header wow fadeInUp">
+       <h3>Eventos</h3>
+       <p>Veja os eventos que acontecerão</p>
+     </header>
+		<div class="row">
+					@foreach($evento as $evento)
+				<div class="card col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="margin: 4px;" >
+  				<img class="card-img-top" src="..." alt="Card image cap">
+  				<div class="card-body">
+    				<h5 class="card-title">{{$evento['nome_evento']}}</h5>
+    				<p class="card-text">{{$evento['descricao']}}</p>
+    				<p class="card-text">{{$evento['quantidade_participante']}}</p>
+    				<a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-primary">Participar</a>
+  				</div>
+				</div>
+  @endforeach
+		</div>
+</div>
 @endsection

@@ -46,6 +46,7 @@ button:hover, a:hover {
 </style>
 </head>
 <div class="container">
+              
     <div class="row justify-content-center">
         <div class="col-md-8" id="tudo">
             <div class="card">
@@ -74,13 +75,14 @@ button:hover, a:hover {
                     <a href="{{action('ResponsavelController@show', 'Profissionais')}}" class="btn btn-primary">Profissionais</a>
                 </div>
 
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
-
-               
-               
+<br>
+    <div class="container">
+        <h3>Seus eventos</h3>
+    </div>            
 <table class="table table-striped" style="width: 70%;margin:20px auto;">
     <thead>
       <tr>
