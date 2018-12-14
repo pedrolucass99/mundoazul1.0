@@ -19,6 +19,7 @@ class CreateParticiparEventosTable extends Migration
             $table->foreign('id_user')->references('id')->on('users');
             $table->integer('id_event')->unsigned();
             $table->foreign('id_event')->references('id')->on('eventos')->onDelete('cascade');
+            $table->unique(array('id_user', 'id_event'));
             $table->timestamps();
         });
     }

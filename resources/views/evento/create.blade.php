@@ -35,7 +35,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Horario">Horário</label>
-              <input type="text" class="form-control" name="hora" required="">
+              <input type="time" class="form-control" name="hora" required="">
             </div>
           </div>
 
@@ -43,17 +43,21 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Data">Data do Evento</label>
-              <input type="text" class="form-control" name="data" required="">
+              <input type="date" class="form-control" name="data" required="">
             </div>
           </div>
 
-        <div style="text-align:center; ">                            
-          <textarea style="width: 32%;border:3px solid black;border-radius: 15px;" name="descricao" placeholder="Escreva a descrição da atividade" cols="30" rows="5"></textarea>
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">                           
+          <textarea " name="descricao" placeholder="Escreva a descrição da atividade" cols="30" rows="5"></textarea>
         </div>
+      </div>  
+      
 
         <div class="row">
           <div class="col-md-4"></div>
-          <div class="form-group col-md-4" style="margin-top:60px">
+          <div class="form-group col-md-4" >
             <button type="submit" class="btn btn-success">Submit</button>
           </div>
         </div>

@@ -70,9 +70,15 @@
                     
                     <li>
                       <a href="{{url('/home')}}">{{ Auth::user()->name }}</a>
+                      <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Sair') }}
+                                    </a>
+
                     </li>
                  @else
-                    <li><a title="team" href="#about">Forum</a></li>
+                    <li><a title="team" href="{{url('forum')}}">Forum</a></li>
                     <li><a title="team" href="#skills">Artigos</a></li>
                     <li><a title="services" href="#services">Projetos sociais</a></li>
                     <li><a href="{{url('instituicao')}}">Instituições</a></li>

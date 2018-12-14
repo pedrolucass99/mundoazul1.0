@@ -75,14 +75,14 @@
 
         <div class="row">
           <div class="col-md-4"></div>
-          <div class="form-group col-md-4" style="margin-top:60px">
+          <div class="form-group col-md-4">
             <button type="submit" class="btn btn-success">Submit</button>
           </div>
         </div>
       </form>
       <div class="row">
           <div class="col-md-4"></div>
-          <div class="form-group col-md-4" style="margin-top:-50px; margin-left:560px";>
+          <div class="form-group col-md-4";>
             <a href="{{action('HomeController@index')}}"><button type="submit"  class="btn btn-danger">Cancelar</button></a>
           </div>
       </div>

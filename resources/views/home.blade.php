@@ -14,8 +14,8 @@
                 @if(Auth::user()->tipo == 0)
                 <div class="card-header">Seja Bem-vindo, {{ Auth::user()->name }}!</div>
                      <a href="{{url('responsavel/create')}}" class="btn btn-primary">Sou Responsável</a>
-                        <a href="{{url('instituicao/create')}}" class="btn btn-warning">Instituição</a>
-                        <a href="{{url('profissional/create')}}" class="btn btn-danger">Sou Profissional</a>
+                        <a href="{{url('instituicao/create')}}" class="btn btn-info">Instituição</a>
+                        <a href="{{url('profissional/create')}}" class="btn btn-success">Sou Profissional</a>
                 <div class="card-body">
                 @endif
 
