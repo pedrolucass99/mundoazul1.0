@@ -59,10 +59,10 @@
           @if($evento['id_user'] == Auth::id())
             <td>{{$evento['nome_user']}}</td>
             <td><a href="{{action('ResponsavelController@show', '.show')}}" data-toggle="tooltip" data-placement="top" title="Ver descrição do evento">{{$evento['nome_evento']}}</a></td>
-            <td><a href="{{action('ResponsavelController@show', $evento['id'].'.edit')}}" class="p"><i class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="top" title="Editar"></i></a></td>
-            <td>
-            <a href="{{action('ResponsavelController@show', $evento['id'].'.delete')}}" class="p"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir"></i></a>
-            </td>
+            <td><button class="btn btn-primary"><a href="{{action('ResponsavelController@show', $evento['id'].'.edit')}}" ><i class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="top" title="Editar"></i></a></button></td>
+            <td><button class="btn btn-danger" onclick="return confirm('Deseja excluir?')">
+            <a href="{{action('ResponsavelController@show', $evento['id'].'.delete')}}"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir"></i></a>
+            </button></td>
           @endif
         </tr>
       @endforeach

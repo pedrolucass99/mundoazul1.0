@@ -17,13 +17,14 @@
                                 <div class="form-group col-md-4">
                                     <input type="text" class="form-control" name="nome_user" required="" value="{{Auth::user()->name}}" disabled="">
                                 </div>
-                            </div>
+                        </div>
                     
-
-                            <div style="text-align:center; ">                            
-                                <textarea style="width: 95%;border:3px solid black;border-radius: 15px;" name="publicacao" placeholder="Escreva sua mensagem" cols="30" rows="5"></textarea>
+                        <div class="row">
+                          <div class="col-md-4"></div>
+                            <div class="form-group col-md-4">                           
+                              <textarea " name="publicacao" placeholder="Digite aqui" cols="30" rows="5"></textarea>
                             </div>
-
+                        </div> 
                     
                             <button type="submit" class="btn btn-success" style="margin-left: 3%; margin-top: 10px;">Enviar</button>
                             <div style="margin-top: 10px;"></div>                    
@@ -49,12 +50,12 @@
           @if($forum['id_user'] == Auth::id())
             <td>{{$forum['nome_user']}}</td>
             <td><a href="{{url('coments', $forum['id'])}}">{{$forum['publicacao']}}</a></td>
-            <td><a href="{{action('ForumController@edit', $forum['id'])}}" class="btn btn-warning">Editar dados</a></td>
+            <td><a href="{{action('ForumController@edit', $forum['id'])}}" class="btn btn-primary"><i class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="top" title="Editar"></i></a></td>
             <td>
               <form action="{{action('ForumController@destroy', $forum['id'])}}" method="post">
               @csrf
                 <input name="_method" type="hidden" value="DELETE">
-                <button class="btn btn-danger" type="submit" onclick="return confirm('Deseja excluir?')" >Delete</button>
+                <button class="btn btn-danger" type="submit" onclick="return confirm('Deseja excluir?')"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir"></i></button>
               </form>
             </td>
           @else

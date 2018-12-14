@@ -26,9 +26,12 @@
                                 </div>
                             </div>
 
-                            <div style="text-align:center; ">                            
-                                <textarea style="width: 95%;border:3px solid black;border-radius: 15px;" name="publicacao" placeholder="Escreva aki sua edição" cols="30" rows="5"></textarea>
-                            </div>
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="form-group col-md-4">                           
+                                    <textarea class="form-control" name="publicacao" placeholder="Editar publicação" cols="30" rows="5" required=""> </textarea>
+                                </div>
+                            </div> 
  
                     
                             <button type="submit" class="btn btn-success" style="margin-left: 3%; margin-top: 10px;">Enviar</button>

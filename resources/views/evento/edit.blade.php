@@ -43,9 +43,12 @@
             </div>
           </div>
 
-        <div style="text-align:center; ">                            
-          <textarea style="width: 32%;border:3px solid black;border-radius:15px;" name="descricao" placeholder="Escreva a descrição da atividade" cols="30" rows="5"></textarea>
-        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+              <div class="form-group col-md-4">                           
+                  <textarea class="form-control" name="descricao" placeholder="Editar comentário" cols="30" rows="5" required=""></textarea>
+              </div>
+        </div> 
 
         <div class="row">
           <div class="col-md-4"></div>

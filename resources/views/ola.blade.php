@@ -20,8 +20,11 @@
                 <div><i class="icon ion-ios-calendar-outline"></i></div>
             </div>
     				<h2 class="title">{{$evento['nome_evento']}}</h2>
-    				<p class="text">{{$evento['descricao']}}</p>
-    				<p class="text">{{$evento['quantidade_participante']}}</p>
+            <p class="text">{{$evento['descricao']}}</p>
+            <p class="text">Local: {{$evento['local']}}</p>
+            <p class="text">Hora: {{$evento['hora']}}</p>
+    				<p class="text">Data: {{$evento['data']}}</p>
+    				<p class="text">número de participantes: {{$evento['quantidade_participante']}}</p>
     				<a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-outline-info">Participar</a>
   				</div>
 				</div>

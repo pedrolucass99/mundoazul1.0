@@ -21,9 +21,12 @@
 
                             <input type="hidden" name="id_publicacao" value="{{$forum->id}}">
 
-                            <div style="text-align:center; ">                            
-                                <textarea style="width: 95%;border:3px solid black;border-radius: 15px;" name="comentario" placeholder="Escreva aki seu comentário" cols="30" rows="5"></textarea>
-                            </div>
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="form-group col-md-4">                           
+                                    <textarea class="form-control" name="comentario" placeholder="Escreva um comentário" cols="30" rows="5" required=""> </textarea>
+                                </div>
+                            </div> 
  
                     
                             <button type="submit" class="btn btn-success" style="margin-left: 3%; margin-top: 10px;">Enviar</button>
