@@ -29,7 +29,7 @@
                         </tbody>
                     </table>
                 <div class="card-body">
-                <a href="#" class="btn btn-danger">Instituição</a>
+                <a href="#" class="btn btn-info">Instituição</a>
                 <a href="{{action('InstituicaoController@show', $instituicao['id'].'.criar')}}" class="btn btn-primary">Cadastrar Projeto</a>
          
 

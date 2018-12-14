@@ -10,8 +10,10 @@
               
     <div class="row justify-content-center">
         <div class="col-md-8" id="tudo">
+            <a href="#" class="btn btn-info">Responsável</a>
+                     <a href="{{action('ResponsavelController@show', $responsavel['id'].'.criar')}}" class="btn btn-primary">Cadastrar Evento</a>
+                    <a href="{{action('ResponsavelController@show', 'Profissionais')}}" class="btn btn-primary">Profissionais</a>
             <div class="card">
-                
 
                 <div class="card-header"><b>Responsável : {{ Auth::user()->name }}</b></div>
                     <table class="table table-striped">
@@ -30,12 +32,6 @@
                             </tr>
                         </tbody>
                     </table>
-                <div class="card-body">
-                    <a href="#" class="btn btn-danger">Responsável</a>
-                     <a href="{{action('ResponsavelController@show', $responsavel['id'].'.criar')}}" class="btn btn-primary">Cadastrar Evento</a>
-                    <a href="{{action('ResponsavelController@show', 'Profissionais')}}" class="btn btn-primary">Profissionais</a>
-                </div>
-
             </div>
         </div>
     </div>

@@ -29,7 +29,7 @@
                         </tbody>
                     </table>
                 <div class="card-body">
-                <a href="#" class="btn btn-danger">Profissional</a>
+                <a href="#" class="btn btn-info">Profissional</a>
                 <td><a href="{{action('ProfissionalController@show', $profissional['id_user'].'.ver')}}" class="btn btn-success">Ver Mensagem</a></td>
                 <a href="#" class="btn btn-primary">Escrever Artigos</a>
                 <a href="#" class="btn btn-primary">Escolas</a>
