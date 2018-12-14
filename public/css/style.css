@@ -245,9 +245,9 @@ Back to top button
   overflow: hidden;
 }
 
-#intro .carousel-fade .carousel-inner .carousel-item {
+/*#intro .carousel-fade .carousel-inner .carousel-item {
   transition-property: opacity;
-}
+*/}
 
 #intro .carousel-fade .carousel-inner .carousel-item,
 #intro .carousel-fade .carousel-inner .active.carousel-item-left,
