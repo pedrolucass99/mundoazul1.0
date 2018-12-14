@@ -1,24 +1,32 @@
-@extends('layouts.app')
+@extends('layouts.meulayout')
 
 @section('content')
+
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+<section id="about">
    
-<div class="container">
-     <header class="section-header wow fadeInUp">
+  <div class="container">
+     <header class="section-header">
        <h3>Eventos</h3>
        <p>Veja os eventos que acontecerão</p>
      </header>
-		<div class="row">
+		<div class="row about-cols">
 					@foreach($evento as $evento)
-				<div class="card col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="margin: 4px;" >
-  				<img class="card-img-top" src="..." alt="Card image cap">
-  				<div class="card-body">
-    				<h5 class="card-title">{{$evento['nome_evento']}}</h5>
-    				<p class="card-text">{{$evento['descricao']}}</p>
-    				<p class="card-text">{{$evento['quantidade_participante']}}</p>
+				<div class="col-md-4 wow fadeInUp">
+          <div class="about-col">
+  				  <div class="img">
+                <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            </div>
+    				<h2 class="title">{{$evento['nome_evento']}}</h2>
+    				<p class="text">{{$evento['descricao']}}</p>
+    				<p class="text">{{$evento['quantidade_participante']}}</p>
     				<a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-primary">Participar</a>
   				</div>
 				</div>
   @endforeach
 		</div>
-</div>
+  </div>
+</section>
 @endsection

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.meulayout')
 
 @section('content')
 <!DOCTYPE html>
