@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h2>Cadastre seus dados</h2><br/>
-      <form method="post" action="{{url('profissional')}}">
+      <form method="post" action="{{url('profissional')}}" enctype="multipart/form-data">
         @csrf
          
          <div class="row">
@@ -45,7 +45,7 @@
           </div>
         </div>
 
-         <div class="row">
+         <!-- <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
                         <div class="input-group">
@@ -64,14 +64,25 @@
             <input type="text" class="form-control">
           </div>
             </div>
+        </div> -->
+
+               <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <input type="file" name="filename">    
+         </div>
         </div>
-                <!-- <lable>Instituições</lable>
+
+
+
+
+                <lable>Instituições</lable>
                 <select name="instituicao">
                   <option value="nenhuma instituição vinculada">Instituição</option>
                   @foreach($instituicaos as $instituicao)
                     <option value="nenhuma instituição vinculada">{{$instituicao['nome']}}</option>
                   @endforeach
-                </select> -->
+                </select>
 
         <div class="row">
           <div class="col-md-4"></div>

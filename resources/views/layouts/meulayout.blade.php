@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">
   <title>Mundo Azul</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <!-- Favicons -->
   <link href="/img/favicon.png" rel="icon">
@@ -44,7 +46,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Mundo Azul</a></h1>
+        <h1><a href="{{url('/')}}" class="scrollto">Mundo Azul</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -57,7 +59,7 @@
                     </li>
                                   
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Projetos sociais</a>
+                      <a class="nav-link" href="{{action('InstituicaoController@show', '.show')}}">Projetos sociais</a>
                     </li>
                     
                     <li class="nav-item">
@@ -65,18 +67,39 @@
                     </li>
                                   
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Publicações</a>
+                      <a class="nav-link" href="{{action('ResponsavelController@show', '.show')}}">Eventos</a>
                     </li>
                     
-                    <li>
-                      <a href="{{url('/home')}}">{{ Auth::user()->name }}</a>
-                      <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Sair') }}
-                                    </a>
-
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{url('home')}}">{{Auth::user()->name}}</a>
                     </li>
+
+                    <li class="nav-item">
+                        @if(Auth::user()->tipo == 1)
+                          <a class="nav-link" href="{{action('ResponsavelController@edit', Auth::id())}}">Editar dados</a>
+                        @endif
+
+                        @if(Auth::user()->tipo == 2)
+                          <a class="nav-link" href="{{action('ProfissionalController@edit',  Auth::id())}}" class="btn btn-warning">Editar dados</a>
+                        @endif
+
+                        @if(Auth::user()->tipo == 3)
+                          <a class="nav-link" href="{{action('InstituicaoController@edit', Auth::id())}}" class="btn btn-warning">Editar dados</a>
+                        @endif
+                    </li>
+                    
+                     <li class="nav-item">
+                      <a class="nav-link" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();                         
+                                  document.getElementById('logout-form').submit();">
+                              {{ __('Sair') }}
+                            </a>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
+            
+
                  @else
                     <li><a title="team" href="{{url('forum')}}">Forum</a></li>
                     <li><a title="team" href="#skills">Artigos</a></li>

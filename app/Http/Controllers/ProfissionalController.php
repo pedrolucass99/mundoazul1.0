@@ -49,15 +49,24 @@ class ProfissionalController extends Controller
      */
     public function store(Request $request)
     {
+       
         
         $user = \App\User::find(Auth::id());
         $user->tipo = 2;
         $user->save();
 
+        if($request->hasfile('filename'))
+         {
+            $file = $request->file('filename');
+            $name=time().$file->getClientOriginalName();
+            $file->move(public_path().'/images/', $name);
+         }
+
         $profissional = new \App\Profissional;
         $profissional->id_user = $request->get('id_user');
         $profissional->numero_conselho = $request->get('numero_conselho');
         $profissional->especializacao = $request->get('especializacao');
+        $profissional->filename = $name;
         $profissional->instituicao = $request->get('instituicao');
         $profissional->save();
 

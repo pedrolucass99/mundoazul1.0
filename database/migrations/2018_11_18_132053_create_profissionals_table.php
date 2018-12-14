@@ -20,6 +20,7 @@ class CreateProfissionalsTable extends Migration
             $table->string('numero_conselho')->unique();
             $table->string('especializacao');
             $table->string('instituicao');
+            $table->string('filename');
             $table->timestamps();
         });
     }
