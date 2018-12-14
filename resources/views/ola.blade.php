@@ -17,12 +17,12 @@
           <div class="about-col">
   				  <div class="img">
                 <img src="img/about-mission.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                <div><i class="icon ion-ios-calendar-outline"></i></div>
             </div>
     				<h2 class="title">{{$evento['nome_evento']}}</h2>
     				<p class="text">{{$evento['descricao']}}</p>
     				<p class="text">{{$evento['quantidade_participante']}}</p>
-    				<a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-primary">Participar</a>
+    				<a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-outline-info">Participar</a>
   				</div>
 				</div>
   @endforeach
@@ -30,3 +30,4 @@
   </div>
 </section>
 @endsection
+
