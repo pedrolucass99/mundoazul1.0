@@ -102,7 +102,7 @@ function mascara(id, mask){
                         @csrf
 
                         <div class="form-group row">
-                            <label for="cpf" class="col-sm-4 col-form-label text-md-right">{{ __('Cpf') }}</label>
+                            <label for="cpf" class="col-sm-4 col-form-label text-md-right">{{ __('CPF') }}</label>
 
                             <div class="col-md-6">
                                <input id="cpf" type="text" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}" name="cpf" value="{{ old('cpf') }}" onblur="validarCPF(this)" onkeypress="return mask(event,this,'###.###.###-##')" maxlength="14"required autofocus>

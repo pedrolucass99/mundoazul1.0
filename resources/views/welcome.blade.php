@@ -91,39 +91,39 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Projetos sociais</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+          <p><h2>Conheça todos os projetos voltados para inclusão de crianças com autismo<h2></p>
         </header>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h4 class="title"><a href="">Projeto Amplitude</a></h4>
+            <p class="description">O projeto Amplitude realiza atividades com crianças portadora do Transtorno do Espectro Autista-TEA.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h4 class="title"><a href="">De Pais para Pais</a></h4>
+            <p class="description">O projeto De Pais para Pais mostra para os responsáveis como lidar com crianças e adolescentes com autismo. Dessa forma, são organizados encontro para rodas de conversas e descrição de problemas no dia-a-dia.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h4 class="title"><a href="">Musicoterapia para Portador de TEA</a></h4>
+            <p class="description">O projeto Musicoterapia para Portador de TEA, tem o objetivo de ensinar música para crianças e adolescentes autistas, usando a música para incluir em atividade em grupo.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <h4 class="title"><a href="">Autismo na Escola</a></h4>
             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <h4 class="title"><a href="">Você com seu Filho</a></h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <h4 class="title"><a href="">Todos Juntos para Brinca</a></h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
           </div>
 
@@ -153,30 +153,30 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Facts</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3>Um Retrato do Autismo no Mundo</h3>
+          <p>A Organização Mudial da Saúde - OMS afirma que autismo afeta uma em cada 160 crianças no mundo.</p>
         </header>
 
         <div class="row counters">
 
   				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">274</span>
-            <p>Meninos</p>
+            <span data-toggle="  ">75%</span>
+            <p>3 em 4 crianças com autismo são meninos.</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">421</span>
-            <p>Meninas</p>
+            <span data-toggle="   ">25%</span>
+            <p>1 em 4 crianças comautismo são meninas.</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,364</span>
-            <p>Total</p>
+            <span data-toggle="   ">56%</span>
+            <p>Transtorno do com portamento e da interação social.</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">18</span>
-            <p>Hard Workers</p>
+            <span data-toggle="   ">33%</span>
+            <p>Pessoa que vive em um "Mundo proprio".</p>
   				</div>
 
   			</div>
