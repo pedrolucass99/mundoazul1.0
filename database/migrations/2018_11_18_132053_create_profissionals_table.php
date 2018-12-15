@@ -17,6 +17,7 @@ class CreateProfissionalsTable extends Migration
             $table->increments('id');
             $table->integer('id_user')->unsigned();
             $table->foreign('id_user')->references('id')->on('users');
+            $table->string('nome_user');
             $table->string('numero_conselho')->unique();
             $table->string('especializacao');
             $table->string('instituicao');
