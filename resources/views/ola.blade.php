@@ -18,7 +18,14 @@
             </div>
     				<h2 class="title">{{$evento['nome_evento']}}</h2>
             <p class="text">{{$evento['descricao']}}</p>
-            <p class="text">Local: {{$evento['local']}}</p>
+            <label for="" id="{{$key}}"><a href="#">Local:</a>
+              <div style="display: none;" id="a{{$key}}">
+              <li>{{$evento['rua']}}</li>
+              <li>{{$evento['numero']}}</li>
+              <li>{{$evento['bairro']}}</li>
+              <li>{{$evento['cidade']}}</li>
+              </div>
+            </label>
             <p class="text">Hora: {{$evento['hora']}}</p>
     				<p class="text">Data: {{$evento['data']}}</p>
     				<p class="text">número de participantes: {{$evento['quantidade_participante']}}</p>
@@ -28,5 +35,17 @@
   @endforeach
 		</div>
   </div>
+
+  <script type="text/javascript">
+    var a = document.getElementById("1");
+    var b = document.getElementById('a1');
+    a.onmouseover = function() {
+      b.style.display = 'block';
+    }
+
+    a.onmouseout = function() {
+      b.style.display = 'none';
+    }
+  </script>
 </section>
 @endsection
