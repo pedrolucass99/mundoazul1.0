@@ -23,7 +23,7 @@
     <tbody>
       @foreach($profissional as $profissional)
       <tr>
-        <td>{{$profissional['id_user']}}</td>
+        <td>{{$profissional['nome_user']}}</td>
         <td>{{$profissional['especializacao']}}</td>
         <td >
        

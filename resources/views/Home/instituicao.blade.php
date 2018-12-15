@@ -61,9 +61,9 @@
           @if($projeto['id_user'] == Auth::id())
             <td>{{$projeto['nome_user']}}</td>
             <td><a href="#">{{$projeto['descricao']}}</a></td>
-            <td><a href="{{action('InstituicaoController@show', $projeto['id'].'.edit')}}" class="btn btn-warning">Editar dados</a></td>
+            <td><a href="{{action('InstituicaoController@show', $projeto['id'].'.edit')}}" class="btn btn-primary"><i class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="top" title="Editar"></i></a></td>
             <td>
-            <a class="btn btn-danger" href="{{action('InstituicaoController@show', $projeto['id'].'.delete')}}">delete</a>
+            <a class="btn btn-danger" href="{{action('InstituicaoController@show', $projeto['id'].'.delete')}}"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir"></i></a>
             </td>
           @endif
         </tr>

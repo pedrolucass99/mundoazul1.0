@@ -39,7 +39,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Horario">Horario</label>
-              <input type="text" class="form-control" name="hora">
+              <input type="time" class="form-control" name="hora">
             </div>
           </div>
 
@@ -47,7 +47,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Data">Data do Evento</label>
-              <input type="text" class="form-control" name="data">
+              <input type="date" class="form-control" name="data">
             </div>
           </div>
 

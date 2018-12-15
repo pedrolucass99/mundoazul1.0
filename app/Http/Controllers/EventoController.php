@@ -62,7 +62,10 @@ class EventoController extends Controller
             $evento->id_user = Auth::id();
             $evento->nome_user = Auth::user()->name;
             $evento->nome_evento = $request->get('nome_evento');
-            $evento->local = $request->get('local');
+            $evento->rua = $request->get('rua');
+            $evento->numero = $request->get('numero');
+            $evento->bairro = $request->get('bairro');
+            $evento->cidade = $request->get('cidade');
             $evento->hora = $request->get('hora');
             $evento->data = $request->get('data');
             $evento->descricao = $request->get('descricao');
@@ -109,13 +112,15 @@ class EventoController extends Controller
             $evento->id_user = Auth::id();
             $evento->nome_user = Auth::user()->name;
             $evento->nome_evento = $request->get('nome_evento');
-            $evento->local = $request->get('local');
+            $evento->rua = $request->get('rua');
+            $evento->numero = $request->get('numero');
+            $evento->bairro = $request->get('bairro');
+            $evento->cidade = $request->get('cidade');
             $evento->hora = $request->get('hora');
             $evento->data = $request->get('data');
             $evento->descricao = $request->get('descricao');
 
-            $evento->save();
-
+            $evento->save();                                                                                                                                            
             $evento = \App\Evento::all();
             return redirect('home');
     }

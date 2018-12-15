@@ -93,14 +93,25 @@
           <h3>Projetos sociais</h3>
           <p><h2>Conheça todos os projetos voltados para inclusão de crianças com autismo<h2></p>
         </header>
-
-        <div class="row">
+          <div class="row">
+        @foreach($projetos as $projeto)
+   
+          
 
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+<<<<<<< HEAD
             <h4 class="title"><a href="">Projeto Amplitude</a></h4>
             <p class="description">O projeto Amplitude realiza atividades com crianças portadora do Transtorno do Espectro Autista-TEA.</p>
+=======
+            <h4 class="title"><a href="">{{$projeto['nome_projeto']}}</a></h4>
+            <p class="description">{{$projeto['descricao']}}</p>
+>>>>>>> 3235514160047549df042fb3964eb3d50bd457a2
           </div>
+        
+
+        @endforeach   
+        <!-- <div class="row">
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
             <h4 class="title"><a href="">De Pais para Pais</a></h4>
@@ -125,7 +136,7 @@
             <div class="icon"><i class="ion-ios-people-outline"></i></div>
             <h4 class="title"><a href="">Todos Juntos para Brinca</a></h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
+          </div> -->
 
         </div>
 

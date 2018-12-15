@@ -64,6 +64,7 @@ class ProfissionalController extends Controller
 
         $profissional = new \App\Profissional;
         $profissional->id_user = $request->get('id_user');
+        $profissional->nome_user = Auth::user()->name;
         $profissional->numero_conselho = $request->get('numero_conselho');
         $profissional->especializacao = $request->get('especializacao');
         $profissional->filename = $name;
@@ -123,7 +124,7 @@ class ProfissionalController extends Controller
             if(Auth::user()->tipo == 2){
                 $id = $id[0];
 
-                $object = DB::table('responsavels')->where('id_user', 3)->first();
+                $object = DB::table('responsavels')->where('id_user', 2)->first();
                 $responsavel = \App\Responsavel::find($object->id);
                 $profissional = \App\User::find($id);
                 return view('olaaa',compact('responsavel', 'profissional'),compact('mensagem'));

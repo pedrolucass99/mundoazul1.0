@@ -47,6 +47,7 @@
                     <div class="card" id="teste">
                         <div class="card-header">Seu perfil profissional, {{ Auth::user()->name }}</div>
                         <div class="card-body">
+                            <img src="/images/{{$profissional->filename}}" height="100" width="100">
                         <p class="title"></p>
                             <a href="#"><i class="fa fa-dribbble"></i></a> 
                             <a href="#"><i class="fa fa-twitter"></i></a> 

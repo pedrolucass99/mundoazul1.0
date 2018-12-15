@@ -19,11 +19,43 @@
       <form method="post" action="{{url('criar/edite/'. $evento['id'])}}">
         @csrf
         
+         <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="Nome">Dê um nome ao evento</label>
+              <input type="text" class="form-control" name="nome_evento" required="" value="{{$evento->nome_evento}}">
+            </div>
+          </div>
+
           <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
-              <label for="Local">Local</label>
-              <input type="text" class="form-control" name="local" value="{{$evento->local}}">
+              <label for="rua">Rua</label>
+              <input type="text" class="form-control" name="rua" required="" value="{{$evento->rua}}">
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="numero">Número</label>
+              <input type="text" class="form-control" name="numero" required="" value="{{$evento->numero}}">
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="bairro">Bairro</label>
+              <input type="text" class="form-control" name="bairro" required="" value="{{$evento->bairro}}">
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" name="cidade" required="" value="{{$evento->cidade}}">
             </div>
           </div>
 
@@ -31,7 +63,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Horario">Horário</label>
-              <input type="text" class="form-control" name="hora" value="{{$evento->hora}}">
+              <input type="time" class="form-control" name="hora" required="" value="{{$evento->hora}}">
             </div>
           </div>
 
@@ -39,16 +71,17 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Data">Data do Evento</label>
-              <input type="text" class="form-control" name="data" value="{{$evento->data}}">
+              <input type="date" class="form-control" name="data" required="" value="{{$evento->data}}">
             </div>
           </div>
 
         <div class="row">
-            <div class="col-md-4"></div>
-              <div class="form-group col-md-4">                           
-                  <textarea class="form-control" name="descricao" placeholder="Editar comentário" cols="30" rows="5" required=""></textarea>
-              </div>
-        </div> 
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">                           
+          <textarea " name="descricao" placeholder="Escreva a descrição da atividade" cols="30" rows="5">{{$evento->descricao}}</textarea>
+        </div>
+      </div>  
+      
 
         <div class="row">
           <div class="col-md-4"></div>

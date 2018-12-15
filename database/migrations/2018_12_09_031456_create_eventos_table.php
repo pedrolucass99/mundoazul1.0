@@ -19,7 +19,10 @@ class CreateEventosTable extends Migration
             $table->foreign('id_user')->references('id')->on('users');
             $table->string('nome_user');
             $table->string('nome_evento');
-            $table->string('local');
+            $table->string('rua');
+            $table->string('numero');
+            $table->string('bairro');
+            $table->string('cidade');
             $table->string('hora');
             $table->string('data');
             $table->longText('descricao');
