@@ -124,7 +124,7 @@ class ProfissionalController extends Controller
             if(Auth::user()->tipo == 2){
                 $id = $id[0];
 
-                $object = DB::table('responsavels')->where('id_user', 3)->first();
+                $object = DB::table('responsavels')->where('id_user', 2)->first();
                 $responsavel = \App\Responsavel::find($object->id);
                 $profissional = \App\User::find($id);
                 return view('olaaa',compact('responsavel', 'profissional'),compact('mensagem'));

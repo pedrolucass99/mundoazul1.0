@@ -125,17 +125,18 @@ class ResponsavelController extends Controller
         }
 
         if($ids[1] == "add"){
-            $id = $ids[0];
-            $evento = \App\Evento::find($id);
-            $evento->quantidade_participante += 1;
-            $evento->save();
 
+             $id = $ids[0];
             $events = new \App\Participar_evento;
             $events->id_user = Auth::id();
             $events->id_event = $id;
             $events->save();
 
-            
+           
+            $evento = \App\Evento::find($id);
+            $evento->quantidade_participante += 1;
+            $evento->save();
+
 
             if(Auth::user()->tipo == 1){
                 $object = DB::table('responsavels')->where('id_user', Auth::id())->first();
