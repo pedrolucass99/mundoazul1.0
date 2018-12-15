@@ -14,7 +14,8 @@ class ProjetoController extends Controller
      */
     public function index()
     {
-        //
+        $projetos = \App\Projeto_social::all();
+        return view('welcome', compact('projetos'));
     }
 
     /**
