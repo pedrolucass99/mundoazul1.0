@@ -26,8 +26,32 @@
           <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
-              <label for="Local">Local</label>
-              <input type="text" class="form-control" name="local" required="">
+              <label for="rua">Rua</label>
+              <input type="text" class="form-control" name="rua" required="">
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="numero">Número</label>
+              <input type="text" class="form-control" name="numero" required="">
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="bairro">Bairro</label>
+              <input type="text" class="form-control" name="bairro" required="">
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" name="cidade" required="">
             </div>
           </div>
 
