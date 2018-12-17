@@ -174,22 +174,22 @@
         <div class="row counters">
 
   				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="  ">75%</span>
+            <span data-toggle="counter-up">75</span>
             <p>3 em 4 crianças com autismo são meninos.</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="   ">25%</span>
+            <span data-toggle="counter-up">25</span>
             <p>1 em 4 crianças comautismo são meninas.</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="   ">56%</span>
+            <span data-toggle="counter-up">56</span>
             <p>Transtorno do com portamento e da interação social.</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="   ">33%</span>
+            <span data-toggle="counter-up">33</span>
             <p>Pessoa que vive em um "Mundo proprio".</p>
   				</div>
 
@@ -287,4 +287,17 @@
     </section><!-- #team -->
 
   </main>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      setTimeout(function(){ 
+        $("[data-toggle=counter-up]").append('%');
+       }, 1500);
+    });    
+  </script>
 @endsection

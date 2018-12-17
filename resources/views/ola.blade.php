@@ -18,34 +18,35 @@
             </div>
     				<h2 class="title">{{$evento['nome_evento']}}</h2>
             <p class="text">{{$evento['descricao']}}</p>
-            <label for="" id="{{$key}}"><a href="#">Local:</a>
-              <div style="display: none;" id="a{{$key}}">
-              <li>{{$evento['rua']}}</li>
-              <li>{{$evento['numero']}}</li>
-              <li>{{$evento['bairro']}}</li>
-              <li>{{$evento['cidade']}}</li>
+            <a data-toggle="collapse" href="#collapseExample{{$key}}" role="button" aria-expanded="false" aria-controls="collapseExample">Mais detalhes</a>
+              <div class="collapse" id="collapseExample{{$key}}">
+              <p class="text">Rua: {{$evento['rua']}} Número: {{$evento['numero']}}</p>
+              <p class="text">Bairro: {{$evento['bairro']}} Cidade: {{$evento['cidade']}}</p>
+              <p class="text">Hora: {{$evento['hora']}} Data: {{$evento['data']}}</p>
               </div>
-            </label>
-            <p class="text">Hora: {{$evento['hora']}}</p>
-    				<p class="text">Data: {{$evento['data']}}</p>
-    				<p class="text">número de participantes: {{$evento['quantidade_participante']}}</p>
-    				<a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-outline-info">Participar</a>
+    				  <p class="text">número de participantes: {{$evento['quantidade_participante']}}</p>
+    				
+            <a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-outline-info">Participar</a>
+
+            {{ Auth::user()->id }}
+            ----
+            {{$evento['id'] }}
   				</div>
 				</div>
   @endforeach
 		</div>
   </div>
 
-  <script type="text/javascript">
-    var a = document.getElementById("1");
-    var b = document.getElementById('a1');
-    a.onmouseover = function() {
-      b.style.display = 'block';
-    }
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
-    a.onmouseout = function() {
-      b.style.display = 'none';
-    }
+  <script type="text/javascript">
+
+   $(document).ready(function() {
+    $('.btn-outline-info').addClass('disabled');
+   });
   </script>
 </section>
 @endsection
