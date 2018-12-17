@@ -5,6 +5,9 @@
   <!--==========================
     Intro Section
   ============================-->
+  <style type="text/css">
+    body main{margin-top: 0px !important;}
+  </style>
   <section id="intro">
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
@@ -103,10 +106,10 @@
 <<<<<<< HEAD
             <h4 class="title"><a href="">Projeto Amplitude</a></h4>
             <p class="description">O projeto Amplitude realiza atividades com crianças portadora do Transtorno do Espectro Autista-TEA.</p>
-=======
+
             <h4 class="title"><a href="">{{$projeto['nome_projeto']}}</a></h4>
             <p class="description">{{$projeto['descricao']}}</p>
->>>>>>> 3235514160047549df042fb3964eb3d50bd457a2
+
           </div>
         
 

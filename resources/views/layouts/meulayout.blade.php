@@ -119,7 +119,7 @@
     </div>
   </header>
   
-  <main class="py-4" style="margin-top: 130px;">
+  <main class="cotainer" >
       @yield('content')
   </main>
 

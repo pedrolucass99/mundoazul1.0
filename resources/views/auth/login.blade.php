@@ -93,7 +93,7 @@ function mascara(id, mask){
 <div id="login">
 <div class="container">
     <div class="form-row align-items-center" id="login">
-        <div class="col-md-8">
+        <div class="col-md-8 mx-auto">
             <div class="card">
                 <div class="card-header">{{ __('Entrar') }}</div>
 

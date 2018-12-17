@@ -91,9 +91,9 @@ function mascara(id, mask){
 
 
 
-<div class="container" style="margin-top: 250px; margin-left: 600px;">
+<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 mx-auto">
             <div class="card">
                 <div class="card-header">{{ __('Registra-se') }}</div>
                 <div class="card-body">
