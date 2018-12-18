@@ -95,7 +95,7 @@ function mascara(id, mask){
     <div class="row justify-content-center">
         <div class="col-md-8 mx-auto">
             <div class="card">
-                <div class="card-header">{{ __('Registra-se') }}</div>
+                <div class="card-header">{{ __('Registrar-se') }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -133,7 +133,7 @@ function mascara(id, mask){
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
-                                @if ($errors->has('Senha'))
+                                @if ($errors->has('password'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>As senhas devem ter pelo menos seis caracteres e corresponder à confirmação.</strong>
                                     </span>
@@ -152,7 +152,7 @@ function mascara(id, mask){
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Registra-se') }}
+                                    {{ __('Registrar') }}
                                 </button>
                             </div>
                         </div>

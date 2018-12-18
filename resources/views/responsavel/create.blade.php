@@ -49,19 +49,20 @@
             </div>
           </div>
 
-          <div class="row">
-          <div class="col-md-4"></div>
-            <div class="form-group col-md-4">
-              <label for="Idade">Email</label>
-              <input type="text" class="form-control" name="email" required="">
-            </div>
-          </div>
 
           <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Idade">Telefone</label>
               <input id="telefone" type="text" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="telefone" value="{{ old('telefone') }}" pattern=".{13,14}" onkeydown="javascript: fMasc( this, mTel);"  maxlength="14" placeholder="DDD + Número" required autofocus>
+            </div>
+          </div>
+          
+          <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="Idade">Email</label>
+              <input type="text" class="form-control" name="email" required="">
             </div>
           </div>
 

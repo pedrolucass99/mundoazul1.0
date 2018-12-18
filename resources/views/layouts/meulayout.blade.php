@@ -102,8 +102,8 @@
 
                  @else
                     <li><a title="team" href="#about">Forum</a></li>
-                    <li><a title="team" href="#skills">Artigos</a></li>
-                    <li><a title="services" href="#services">Projetos sociais</a></li>
+                    <li><a title="team" href="#services">Projetos sociais</a></li>
+                    <li><a title="services" href="#skills">Artigos</a></li>
                     <li><a href="{{url('instituicao')}}">Instituições</a></li>
                      <li class="nav-item">
                          <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>

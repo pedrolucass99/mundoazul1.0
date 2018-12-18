@@ -15,22 +15,22 @@
   				  <div class="img">
                 <img src="img/about-mission.jpg" alt="" class="img-fluid">
                 <div><i class="icon ion-ios-calendar-outline"></i></div>
-            </div>
+            </div><br>
     				<h2 class="title">{{$evento['nome_evento']}}</h2>
-            <p class="text">{{$evento['descricao']}}</p>
-            <a data-toggle="collapse" href="#collapseExample{{$key}}" role="button" aria-expanded="false" aria-controls="collapseExample">Mais detalhes</a>
+            <p class="text">Rua: {{$evento['rua']}} Número: {{$evento['numero']}}</p>
+            <p class="text">Bairro: {{$evento['bairro']}} Cidade: {{$evento['cidade']}}</p>
+            <p class="text">Hora: {{$evento['hora']}} Data: {{$evento['data']}}</p>
+            <div class="center">
+            <a data-toggle="collapse" href="#collapseExample{{$key}}" role="button" aria-expanded="false" aria-controls="collapseExample">Detalhes</a>
+            </div>
               <div class="collapse" id="collapseExample{{$key}}">
-              <p class="text">Rua: {{$evento['rua']}} Número: {{$evento['numero']}}</p>
-              <p class="text">Bairro: {{$evento['bairro']}} Cidade: {{$evento['cidade']}}</p>
-              <p class="text">Hora: {{$evento['hora']}} Data: {{$evento['data']}}</p>
-              </div>
+                <p class="text">{{$evento['descricao']}}</p>
+              
     				  <p class="text">número de participantes: {{$evento['quantidade_participante']}}</p>
-    				
-            <a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-outline-info">Participar</a>
-
-            {{ Auth::user()->id }}
-            ----
-            {{$evento['id'] }}
+              </div>
+    				<div>
+            <a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-secondary">Participar</a>
+            </div>
   				</div>
 				</div>
   @endforeach
@@ -42,11 +42,11 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
 
    $(document).ready(function() {
     $('.btn-outline-info').addClass('disabled');
    });
-  </script>
+  </script> -->
 </section>
 @endsection

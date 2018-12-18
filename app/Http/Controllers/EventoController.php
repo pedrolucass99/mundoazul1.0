@@ -59,7 +59,6 @@ class EventoController extends Controller
     public function store(Request $request)
     {
         $evento = new \App\Evento;
-            $evento->id = get('id');
             $evento->id_user = Auth::id();
             $evento->nome_user = Auth::user()->name;
             $evento->nome_evento = $request->get('nome_evento');
