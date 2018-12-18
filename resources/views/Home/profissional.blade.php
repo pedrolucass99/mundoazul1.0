@@ -29,10 +29,10 @@
                         </tbody>
                     </table>
                 <div class="card-body">
-                <a href="#" class="btn btn-info">Profissional</a>
-                <td><a href="{{action('ProfissionalController@show', $profissional['id_user'].'.ver')}}" class="btn btn-success">Ver Mensagem</a></td>
+                
+                <td><a href="{{action('ProfissionalController@show', $profissional['id_user'].'.ver')}}" class="btn btn-info">Ver Mensagem</a></td>
                 <a href="#" class="btn btn-primary">Escrever Artigos</a>
-                <a href="#" class="btn btn-primary">Escolas</a>
+          
 
                 @if (session('status'))
                     <div class="alert alert-success" role="alert">
@@ -43,20 +43,20 @@
                 </div>
             </div>
         </div>
-                @if(Auth::user()->tipo == 2)                               
+<!--                 @if(Auth::user()->tipo == 2)                               
                     <div class="card" id="teste">
                         <div class="card-header">Seu perfil profissional, {{ Auth::user()->name }}</div>
                         <div class="card-body">
-                            <img src="/images/{{$profissional->filename}}" height="100" width="100">
+                            <img src="/images/{{$profissional->filename}}" height="100" width="250">
                         <p class="title"></p>
                             <a href="#"><i class="fa fa-dribbble"></i></a> 
                             <a href="#"><i class="fa fa-twitter"></i></a> 
                             <a href="#"><i class="fa fa-linkedin"></i></a> 
                             <a href="#"><i class="fa fa-facebook"></i></a> 
-                        <p><button style="width: 100%;background-color: black;color: white;padding: 10pt;">Contato</button></p>
+                       
                         </div>
                     </div>
-            @endif
+            @endif -->
     </div>
 </div>
 
