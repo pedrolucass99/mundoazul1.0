@@ -69,12 +69,9 @@
                     <li class="nav-item">
                       <a class="nav-link" href="{{action('ResponsavelController@show', '.show')}}">Eventos</a>
                     </li>
-                    
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{url('home')}}">{{Auth::user()->name}}</a>
-                    </li>
-
-                    <li class="nav-item">
+                    <li class="menu-has-children"><a class="nav-link" href="{{url('home')}}">{{Auth::user()->name}}</a>
+                  <ul>
+                    <li                    <li class="nav-item">
                         @if(Auth::user()->tipo == 1)
                           <a class="nav-link" href="{{action('ResponsavelController@edit', Auth::id())}}">Editar dados</a>
                         @endif
@@ -86,7 +83,7 @@
                         @if(Auth::user()->tipo == 3)
                           <a class="nav-link" href="{{action('InstituicaoController@edit', Auth::id())}}" class="btn btn-warning">Editar dados</a>
                         @endif
-                    </li>
+                    </li> 
                     
                      <li class="nav-item">
                       <a class="nav-link" href="{{ route('logout') }}"
@@ -98,6 +95,14 @@
                             @csrf
                         </form>
                     </li>
+        
+                </li>
+<!--                     
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{url('home')}}">{{Auth::user()->name}}</a>
+                    </li>
+ -->
+
             
 
                  @else
