@@ -22,7 +22,7 @@
                         <div class="row">
                           <div class="col-md-4"></div>
                             <div class="form-group col-md-4">                           
-                              <textarea " name="publicacao" placeholder="Digite aqui" cols="30" rows="5"></textarea>
+                              <textarea " name="publicacao" placeholder="Digite aqui" cols="30" rows="5" required=""></textarea>
                             </div>
                         </div> 
                     

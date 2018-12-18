@@ -26,10 +26,9 @@
               <div class="collapse" id="collapseExample{{$key}}">
                 <p class="text">{{$evento['descricao']}}</p>
               
-    				  <p class="text">número de participantes: {{$evento['quantidade_participante']}}</p>
+    				  <p class="text">número de participantes: {{$evento['quantidade_participante']}} <a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn" data-toggle="tooltip" data-placement="top" title="participar do evento">Participar</a></p>
               </div>
     				<div>
-            <a href="{{action('ResponsavelController@show', $evento['id'].'.add')}}" class="btn btn-secondary">Participar</a>
             </div>
   				</div>
 				</div>

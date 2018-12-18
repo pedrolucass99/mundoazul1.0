@@ -30,12 +30,12 @@
 
 
           <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <label for="Numero_conselho">Numero conselho:</label>
-            <input type="text" class="form-control" name="numero_conselho" required="">
+            <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+              <label for="Numero_conselho">Numero conselho:</label>
+              <input type="text" class="form-control" name="numero_conselho" required="">
+            </div>
           </div>
-        </div>
          
          <div class="row">
           <div class="col-md-4"></div>
@@ -66,24 +66,24 @@
             </div>
         </div> -->
 
-               <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <input type="file" name="filename">    
-         </div>
-        </div>
-
-
-
-
-                <lable>Instituições</lable>
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="form-group col-md-4">
+                <input type="file" name="filename">    
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-md-4"></div>
+                <label>Instituições</label>
                 <select name="instituicao">
                   <option value="nenhuma instituição vinculada">Instituição</option>
                   @foreach($instituicaos as $instituicao)
                     <option value="nenhuma instituição vinculada">{{$instituicao['nome']}}</option>
                   @endforeach
                 </select>
-
+                
+              </div>
+<br>
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4">

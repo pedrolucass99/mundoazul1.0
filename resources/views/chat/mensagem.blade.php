@@ -30,7 +30,7 @@
                             <input type="hidden" name="para_user" value="{{$profissional->id}}">
 
                             <div style="text-align:center; ">                            
-                                <textarea style="width: 95%;border:3px solid black;border-radius: 15px;" name="mensagem" placeholder="Escreva aki seu comentário" cols="30" rows="5"></textarea>
+                                <textarea style="width: 95%;border:3px solid black;border-radius: 15px;" name="mensagem" placeholder="Escreva aqui seu comentário" cols="30" rows="5" required=""></textarea>
                             </div>
  
                     
@@ -38,7 +38,5 @@
                             <div style="margin-top: 10px;"></div>                    
                    </form>
                    <br>
-
-                   <table class="table table-striped">
    
 @endsection

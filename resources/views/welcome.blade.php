@@ -97,50 +97,19 @@
           <p><h2>Conheça todos os projetos voltados para inclusão de crianças com autismo<h2></p>
         </header>
           <div class="row">
+            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+              <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+              <h4 class="title"><a>Projeto Amplitude</a></h4>
+              <p class="description">O projeto Amplitude realiza atividades com crianças portadora do Transtorno do Espectro Autista-TEA.</p> 
+            </div>
         @foreach($projetos as $projeto)
-   
-          
-
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-<<<<<<< HEAD
-            <h4 class="title"><a href="">Projeto Amplitude</a></h4>
-            <p class="description">O projeto Amplitude realiza atividades com crianças portadora do Transtorno do Espectro Autista-TEA.</p>
-
-            <h4 class="title"><a href="">{{$projeto['nome_projeto']}}</a></h4>
-            <p class="description">{{$projeto['descricao']}}</p>
-
-          </div>
-        
+            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+              <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+              <h4 class="title"><a>{{$projeto['nome_projeto']}}</a></h4>
+              <p class="description">{{$projeto['descricao']}}</p>
+            </div>
 
         @endforeach   
-        <!-- <div class="row">
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">De Pais para Pais</a></h4>
-            <p class="description">O projeto De Pais para Pais mostra para os responsáveis como lidar com crianças e adolescentes com autismo. Dessa forma, são organizados encontro para rodas de conversas e descrição de problemas no dia-a-dia.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Musicoterapia para Portador de TEA</a></h4>
-            <p class="description">O projeto Musicoterapia para Portador de TEA, tem o objetivo de ensinar música para crianças e adolescentes autistas, usando a música para incluir em atividade em grupo.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Autismo na Escola</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Você com seu Filho</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Todos Juntos para Brinca</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div> -->
-
         </div>
 
       </div>

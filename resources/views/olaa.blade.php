@@ -1,34 +1,23 @@
 @extends('layouts.meulayout')
 @section('content')
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<div class="container">
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th>Id</th>
-				<th>Nome</th>
-				<th>Descrição</th>
-				<th colspan="2">Ações</th>
-			</tr>
-		</thead>
 
-		<tbody>
-		@foreach($projeto as $projeto)
-			<tr>
-				<td>{{$projeto['id']}}</td>
-				<td>{{$projeto['nome_user']}}</td>
-				<td>{{$projeto['descricao']}}</td>
-				<td><a href="#" class="btn btn-primary">Ver</a></td>
-			</tr>	
-		@endforeach
-		</tbody>
-	</table>
-</div>	
-</body>
-</html>
+<section id="services">
+<header class="section-header">
+       <h3>Seus projetos sociais</h3>
+			@foreach($projeto as $projeto)
+       <p>Olá, {{$projeto['nome_user']}}</p>
+     </header>
+<div class="container">     
+	<div class="row">
+	        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+           <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+           <h4 class="title"><a href="">{{$projeto['nome_projeto']}}</a></h4>
+           <p class="description">{{$projeto['descricao']}}</p>
+         </div>
+			@endforeach
+
+	
+	</div>
+</div>
+</section>
 @endsection
